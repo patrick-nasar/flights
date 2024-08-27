@@ -1,0 +1,24 @@
+<div class="hidden md:flex justify-between items-center h-20 bg-[#3b73ba] px-10 text-white">
+    <div>Flights</div>
+    <ul class="space-x-5">
+        <a routerLink="/" routerLinkActive="active" class={{underLine}}>Home</a>
+        <a routerLink="/Search" routerLinkActive="active" class={{underLine}}>Search</a>
+        <!-- <a routerLink="/object" routerLinkActive="active">Object</a> -->
+        <!-- <a routerLink="/fakeapi" routerLinkActive="active">Fakeapi</a> -->
+    </ul>
+</div>
+
+
+<!-- Mobile -->
+<div class="md:hidden flex justify-between items-center h-16 bg-[#3b73ba] px-8 text-white">
+    <div>Flights</div>
+
+    <div class="dropdown">
+        <button class="dropdownbutton" (click)="toggleDropdown()">Menu</button>
+        <div class="dropdowndiv" [class.show]="isOpen">
+            <a routerLink="/" routerLinkActive="active" class="link">Home</a>
+            <br>
+            <a routerLink="/Search" routerLinkActive="active" class="link">Search</a>
+        </div>
+    </div>
+</div>
