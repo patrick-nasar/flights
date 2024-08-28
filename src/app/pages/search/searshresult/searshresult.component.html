@@ -1,0 +1,71 @@
+<!-- <button (click)="clickb()">awdawd</button> -->
+<div class="hidden px-3 py-5 w-full md:flex justify-center items-center text-sm md:text-base">
+    <table class="table-auto">
+        <thead>
+            <tr class="capitalize text-left">
+                <th></th>
+                <th class="px-3 lg:px-5 py-2">destination</th>
+                <th class="px-3 lg:px-5 py-2">Duration</th>
+                <th class="px-3 lg:px-5 py-2">Date</th>
+                <th class="px-3 lg:px-5 py-2">price</th>
+            </tr>
+        </thead>
+        <tbody class="">
+            <tr class="" *ngFor="let flight of data">
+                <td class="px-3 lg:px-5 py-2">
+                    <img src="assets/images/FR.png" width="50rem">
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight.origin }} -
+                    {{ flight.destination }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight.duration }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight.departureTime }}
+                    <br>
+                    {{ flight.arrivalTime }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight.price }} €
+                </td>
+                <td class="py-1">
+                    <button type="submit"
+                        class="flex justify-center items-center px-3 lg:px-5 py-2 bg-[#4e72b7] text-white rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
+                        <span>INFO</span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <button (click)="clickb()">awdawd</button> -->
+<div class="md:hidden px-3 py-5 w-full text-sm md:text-base space-y-3">
+    <div *ngFor="let flight of data" class="w-full py-3 px-2 border flex justify-between items-center rounded-lg ">
+        <div>
+            <p>{{ flight.origin }} - {{ flight.destination }}</p>
+            <div class="flex space-x-3">
+                <div>
+                    <img src="assets/images/FR.png" width="70rem">
+                </div>
+                <div>
+                    <p>{{ flight.duration }}</p>
+                    <p>
+                        {{ flight.departureTime }}
+                        <br>
+                        {{ flight.arrivalTime }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <p class="text-base">{{ flight.price }} €</p>
+            <button type="submit"
+                class="flex justify-center items-center px-3 lg:px-5 py-2 bg-[#4e72b7] text-white rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
+                <span>INFO</span>
+            </button>
+        </div>
+    </div>
+</div>

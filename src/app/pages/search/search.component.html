@@ -1,1 +1,35 @@
-<p>search ssssssssssssssssssss works!</p>
+<div class="py-10 space-y-5">
+    <p class="text-center text-2xl">Enter your destination over here</p>
+    <form class="lg:flex flex-wrap justify-center items-end lg:space-x-4 space-y-3 lg:space-y-0 px-3 capitalize">
+        <div class="">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Where from?</label>
+            <input #wherefrom type="text" placeholder="Ex.SFO"
+                class="w-full px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-100 focus:border-[#4e72b7]" />
+        </div>
+        <div class="">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Where to?</label>
+            <input #whereto type="text" placeholder="Ex.HKG"
+                class="w-full px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-100 focus:border-[#4e72b7]" />
+        </div>
+        <div class="">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">outbound date?</label>
+            <input #outbound_date type="text" placeholder="Ex.2024-08-29"
+                class="w-full px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-100 focus:border-[#4e72b7]" />
+        </div>
+        <div class="">
+            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">return date?</label>
+            <input #return_date type="text" placeholder="Ex.2024-9-29"
+                class="w-full px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:ring-indigo-100 focus:border-[#4e72b7]" />
+        </div>
+
+        <button type="submit"
+            (click)="serachOperation(wherefrom.value,whereto.value,outbound_date.value ,return_date.value )"
+            class="flex justify-center items-center space-x-2 bg-[#4e72b7] text-white px-5 py-[9px] rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
+            <i class="material-icons">search</i>
+            <span>Search</span>
+        </button>
+    </form>
+</div>
+
+
+<app-searshresult [data]='data.flights'></app-searshresult>

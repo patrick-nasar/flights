@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [NgStyle, NgStyle, RouterLinkActive, RouterLink, MatIconModule],
+  imports: [NgStyle, NgStyle, RouterLinkActive, RouterLink, MatIconModule,],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.css'
 })

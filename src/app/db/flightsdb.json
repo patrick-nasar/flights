@@ -1,0 +1,154 @@
+{
+    "flights": [
+      {
+        "id": 1,
+        "airline": "American Airlines",
+        "flightNumber": "AA123",
+        "origin": "JFK",
+        "destination": "LAX",
+        "departureTime": "2024-09-01",
+        "arrivalTime": "2024-09-01",
+        "price": 350.00,
+        "duration": "3 hours 30 minutes",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 2,
+        "airline": "Delta Air Lines",
+        "flightNumber": "DL456",
+        "origin": "CDG",
+        "destination": "LHR",
+        "departureTime": "2024-09-05",
+        "arrivalTime": "2024-09-05",
+        "price": 275.00,
+        "duration": "1 hour 30 minutes",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 3,
+        "airline": "United Airlines",
+        "flightNumber": "UA789",
+        "origin": "HKG",
+        "destination": "SFO",
+        "departureTime": "2024-09-10",
+        "arrivalTime": "2024-09-11",
+        "price": 600.00,
+        "duration": "12 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 4,
+        "airline": "United Airlines",
+        "flightNumber": "UA789",
+        "origin": "FRA",
+        "destination": "DXB",
+        "departureTime": "2024-03-16",
+        "arrivalTime": "2024-03-16",
+        "price": 700.00,
+        "duration": "2 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 5,
+        "airline": "American Airlines",
+        "flightNumber": "UA789",
+        "origin": "HKG",
+        "destination": "DXB",
+        "departureTime": "2024-04-12",
+        "arrivalTime": "2024-04-11",
+        "price": 400.00,
+        "duration": "4 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 6,
+        "airline": "United Airlines",
+        "flightNumber": "UA789",
+        "origin": "YYZ",
+        "destination": "SFO",
+        "departureTime": "2024-12-11",
+        "arrivalTime": "2024-12-11",
+        "price": 100.00,
+        "duration": "12 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 7,
+        "airline": "Delta Air Lines",
+        "flightNumber": "UA789",
+        "origin": "DXB",
+        "destination": "SFO",
+        "departureTime": "2024-09-22",
+        "arrivalTime": "2024-09-22",
+        "price": 200.00,
+        "duration": "5 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 8,
+        "airline": "American Airlines",
+        "flightNumber": "UA789",
+        "origin": "HKG",
+        "destination": "FRA",
+        "departureTime": "2024-09-26",
+        "arrivalTime": "2024-09-26",
+        "price": 500.00,
+        "duration": "7 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 9,
+        "airline": "United Airlines",
+        "flightNumber": "UA789",
+        "origin": "HKG",
+        "destination": "SFO",
+        "departureTime": "2024-09-10",
+        "arrivalTime": "2024-09-11",
+        "price": 400.00,
+        "duration": "3 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      },
+      {
+        "id": 10,
+        "airline": "Delta Air Lines",
+        "flightNumber": "UA789",
+        "origin": "YYZ",
+        "destination": "SFO",
+        "departureTime": "2024-09-10",
+        "arrivalTime": "2024-09-11",
+        "price": 200.00,
+        "duration": "3 hours",
+        "baggageAllowance": {
+          "checked": 2,
+          "carryOn": 1
+        }
+      }
+    ]
+  }

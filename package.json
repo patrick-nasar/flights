@@ -22,7 +22,10 @@
     "@angular/router": "^18.2.0",
     "material-design-icons-iconfont": "^6.7.0",
     "ngx-parallax": "^4.0.0",
+    "ngx-simple-parallax-js": "^0.0.10",
     "rxjs": "~7.8.0",
+    "serpapi": "^2.1.0",
+    "simple-parallax-js": "^5.6.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
   },
