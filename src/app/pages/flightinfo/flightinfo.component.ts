@@ -2,19 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SerpapiService } from '../../services/serpapi.service';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
-
-interface flighttype {
-  airline: string,
-  arrivalTime: string,
-  baggageAllowance: string,
-  departureTime: string,
-  destination: string,
-  duration: string,
-  flightNumber: string,
-  id: number,
-  origin: string,
-  price: number
-}
+import { flightDataType } from '../../typesfile';
 
 @Component({
   selector: 'app-flightinfo',
@@ -26,11 +14,10 @@ interface flighttype {
 
 export class FlightinfoComponent {
   id: string | null = ''
-  flight: flighttype | null = null
+  flight: flightDataType | null = null
   keys: string[] = []
   values: string[] = []
   show = false
-
 
   constructor(private route: ActivatedRoute, private flightAPI: SerpapiService) { }
 

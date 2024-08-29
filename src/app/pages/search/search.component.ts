@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SearshresultComponent } from "./searshresult/searshresult.component";
 import { FormsModule } from '@angular/forms';
 import { SerpapiService } from '../../services/serpapi.service';
+import { flightDataType } from '../../typesfile';
 
 @Component({
   selector: 'app-search',
@@ -12,20 +13,18 @@ import { SerpapiService } from '../../services/serpapi.service';
 })
 
 export class SearchComponent {
-  data: any;
+  data: flightDataType[] | null = null;
 
-  constructor(private searchAPI: SerpapiService) { }
+  constructor(private API: SerpapiService) { }
 
   serachOperation(wherefrom: string, whereto: string, outbound_date: string, return_date: string) {
-    this.searchAPI.getData()
+   this.data = this.API.getSearchedFlight(wherefrom, whereto, outbound_date, return_date)
   }
 
 
   ngOnInit() {
-    this.data = this.searchAPI.getData()
+    this.data = this.API.getData().flights
     console.log(this.data)
   }
-
-
 
 }
