@@ -10,6 +10,7 @@ import { SerpapiService } from '../../services/serpapi.service';
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })
+
 export class SearchComponent {
   data: any;
 

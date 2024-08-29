@@ -31,10 +31,10 @@
                     {{ flight.price }} €
                 </td>
                 <td class="py-1">
-                    <button type="submit"
+                    <a routerLink='/FlightInfo/{{flight.id}}' routerLinkActive="active"
                         class="flex justify-center items-center px-3 lg:px-5 py-2 bg-[#4e72b7] text-white rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
                         <span>INFO</span>
-                    </button>
+                    </a>
                 </td>
             </tr>
         </tbody>

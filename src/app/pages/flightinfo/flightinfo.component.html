@@ -1,0 +1,121 @@
+<!--
+ 
+ Here I tried to show all object but I did not like it--------------------
+ 
+ <div *ngIf="show" class="flex justify-center items-center space-x-4">
+    <div class="capitalize">
+        <p *ngFor="let entry of keys">
+            {{ entry }}:
+        </p>
+    </div>
+    <div>
+        <p *ngFor="let entry of values">
+            <span>{{ entry }}</span>
+        </p>
+    </div>
+
+    <div>
+        <button
+            class="flex justify-center items-center px-3 lg:px-5 py-2 bg-[#4e72b7] text-white rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
+            <span>INFO</span>
+        </button>
+    </div>
+</div>
+-->
+
+<div class="py-7 px-3 space-y-7">
+    <h2 class="text-left md:text-center capitalize">
+        <span class="text-xl md:text-2xl">
+            Information about "{{ flight?.origin }} - {{ flight?.destination }}" flight
+        </span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-evenly items-center gap-y-5">
+
+        <div class="flex justify-start md:justify-center items-top md:col-span-3 lg:col-span-1">
+            <img src="assets/images/FR.png" class="size-16">
+        </div>
+
+        <div class="flex justify-start md:justify-center items-top">
+            <div>
+                <span>From: {{flight?.origin}}</span>
+                <br>
+                <span>Duration: {{flight?.duration}}</span>
+                <br>
+                <span>To: {{flight?.destination}}</span>
+            </div>
+        </div>
+
+        <div class="flex justify-start md:justify-center items-top">
+            <div>
+                <span>Departure Date: {{flight?.departureTime}}</span>
+                <br>
+                <span>Arrival Date: {{flight?.arrivalTime}}</span>
+                <br>
+                <span>Baggage Allowed : {{flight?.baggageAllowance}}</span>
+            </div>
+        </div>
+
+        <div class="flex justify-start md:justify-center items-top">
+            <div>
+                <span class="font-bold">{{flight?.airline}}</span>
+                <br>
+                <span>Price: {{flight?.price}} €</span>
+                <br>
+                <span>Flight Number: {{flight?.flightNumber}}</span>
+            </div>
+        </div>
+
+        <div class="flex justify-start md:justify-center items-top md:col-span-3 lg:col-span-1">
+            <button (click)="show = true"
+                class="flex justify-center items-center px-3 lg:px-5 py-2 bg-[#4e72b7] text-white rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
+                <span>Select Flight</span>
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+<div *ngIf="show"
+    class="absolute bottom-0 left-0 flex justify-center items-center text-sm md:text-base m-10 py-3 px-5 capitalize border rounded-xl animate-bounce text-white bg-[#4e72b7]">
+    <span>You have booked a flight on a fake website!!!</span>
+</div>
+
+<!-- <div *ngIf="show" class="flex justify-center items-center space-x-4">
+
+
+    <table class="table-auto">
+        <tbody class="">
+            <tr class="" *ngFor="let flight of flight">
+                <td class="px-3 lg:px-5 py-2">
+                    <img src="assets/images/FR.png" width="50rem">
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight?.origin }} - {{ flight?.destination }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight?.duration }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight?.departureTime }} - {{ flight?.arrivalTime }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight?.baggageAllowance }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight?.flightNumber }}
+                </td>
+                <td class="px-3 lg:px-5 py-2">
+                    {{ flight?.price }} €
+                </td>
+                <td class="py-1">
+                    <button
+                        class="flex justify-center items-center px-3 lg:px-5 py-2 bg-[#4e72b7] text-white rounded-lg hover:bg-[#365287] focus:outline-none focus:ring-2 focus:ring-[#4e72b7] focus:ring-opacity-50 transition duration-200">
+                        <span>Select</span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->

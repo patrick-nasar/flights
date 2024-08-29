@@ -9,11 +9,8 @@
         "departureTime": "2024-09-01",
         "arrivalTime": "2024-09-01",
         "price": 350.00,
-        "duration": "3 hours 30 minutes",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "duration": "3 hours",
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 2,
@@ -24,11 +21,8 @@
         "departureTime": "2024-09-05",
         "arrivalTime": "2024-09-05",
         "price": 275.00,
-        "duration": "1 hour 30 minutes",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "duration": "1 hour",
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 3,
@@ -40,10 +34,7 @@
         "arrivalTime": "2024-09-11",
         "price": 600.00,
         "duration": "12 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 4,
@@ -55,10 +46,7 @@
         "arrivalTime": "2024-03-16",
         "price": 700.00,
         "duration": "2 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 5,
@@ -70,10 +58,7 @@
         "arrivalTime": "2024-04-11",
         "price": 400.00,
         "duration": "4 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 6,
@@ -85,10 +70,7 @@
         "arrivalTime": "2024-12-11",
         "price": 100.00,
         "duration": "12 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 7,
@@ -100,10 +82,7 @@
         "arrivalTime": "2024-09-22",
         "price": 200.00,
         "duration": "5 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 8,
@@ -115,10 +94,7 @@
         "arrivalTime": "2024-09-26",
         "price": 500.00,
         "duration": "7 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 9,
@@ -130,10 +106,7 @@
         "arrivalTime": "2024-09-11",
         "price": 400.00,
         "duration": "3 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance":"Big baggage"
       },
       {
         "id": 10,
@@ -145,10 +118,7 @@
         "arrivalTime": "2024-09-11",
         "price": 200.00,
         "duration": "3 hours",
-        "baggageAllowance": {
-          "checked": 2,
-          "carryOn": 1
-        }
+        "baggageAllowance": "Big baggage"
       }
     ]
   }

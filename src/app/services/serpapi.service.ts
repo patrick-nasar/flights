@@ -7,10 +7,16 @@ import flights from '../db/flightsdb.json'
 export class SerpapiService {
 
   constructor() { }
-  db = flights
+  flights = flights
 
   getData() {
-    return this.db;
+    return this.flights;
   }
+
+  getOneFlight(id: string | null) {
+    return this.flights.flights.filter(flightid => flightid.id === parseInt(id || ''));
+  }
+
+
 
 }

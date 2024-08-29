@@ -1,23 +1,24 @@
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 interface datatype {
   airline: string,
   arrivalTime: string,
-  baggageAllowance: { checked: 2, carryOn: 1 },
+  baggageAllowance: string,
   departureTime: string,
   destination: string,
   duration: string,
   flightNumber: string,
   id: number,
   origin: string,
-  price: string
+  price: number
 }
 
 @Component({
   selector: 'app-searshresult',
   standalone: true,
-  imports: [NgFor, NgIf, CommonModule,],
+  imports: [NgFor, NgIf, CommonModule,RouterLinkActive, RouterLink, RouterOutlet],
   templateUrl: './searshresult.component.html',
   styleUrl: './searshresult.component.css'
 })
