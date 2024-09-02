@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import flights from '../db/flightsdb.json'
+import { flightDataType } from '../typesfile';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SerpapiService {
-
   constructor() { }
 
   getData() {
@@ -13,7 +13,7 @@ export class SerpapiService {
   }
 
   getOneFlight(id: string | null) {
-    return flights.flights.filter(flightid => flightid.id === parseInt(id || ''));
+    return flights.flights.filter((flightid: flightDataType) => flightid.id === parseInt(id || ''));
   }
 
   getSearchedFlight(wherefrom: string, whereto: string, outbound_date: string, return_date: string) {
@@ -22,7 +22,7 @@ export class SerpapiService {
       if (wherefrom === flights.flights[i].origin
         && whereto === flights.flights[i].destination
         && outbound_date === flights.flights[i].departureTime
-        && return_date ===  flights.flights[i].arrivalTime) {
+        && return_date === flights.flights[i].arrivalTime) {
         return [flights.flights[i]]
       }
     }
