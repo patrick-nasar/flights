@@ -1,26 +1,37 @@
 # Flights
+This is a **learning project** aimed at practicing and exploring the **Angular** framework. The website is a simple flight booking platform that allows users to search for flights, and view available flights using **fake data**. It also includes basic frontend design with **Tailwind CSS** and unit testing implemented with **Jest**.
+
+The project is **deployed on GitHub Pages** and can be accessed [here](https://your-github-username.github.io/your-repo-name](https://patrick-nasar.github.io/flights/flights/)).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
 
-## Development server
+## Features
++ **View Flights**: A list of available flights is shown based on search queries (data is fake).
++ **Search Flights**: Users can search for available flights using filters like departure and destination.
++ **Responsive Design**: Optimised for both desktop and mobile with Tailwind CSS.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
++ **Angular**: Frontend framework used for building the single-page application.
++ **TypeScript**: Used as the main programming language for Angular development.
++ **Tailwind CSS**: For styling the UI components in a responsive manner.
++ **Jest**: For testing the application’s components and services.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+1. Node.js: Ensure you have Node.js installed.
+2. Angular CLI: If you don’t have Angular CLI installed globally, you can install it by running: `npm install -g @angular/cli`
+3. Clone the repository: `git clone https://github.com/patrick-nasar/flights.git`
+4. Install dependencies: Run the following command to install the required packages and dependencies: `npm install`
+5. Start the development server: After installing the dependencies, you can start the local development server by running: `npm start`
+6. Once the server is running, open your browser and go to http://localhost:4200/.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `docs/` directory.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run `npm run test` to execute the unit tests via Jest.
+(There are tests just for service file)
 
 ## Further help
 
