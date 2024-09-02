@@ -1,7 +1,7 @@
 # Flights
 This is a **learning project** aimed at practicing and exploring the **Angular** framework. The website is a simple flight booking platform that allows users to search for flights, and view available flights using **fake data**. It also includes basic frontend design with **Tailwind CSS** and unit testing implemented with **Jest**.
 
-The project is **deployed on GitHub Pages** and can be accessed [here](https://your-github-username.github.io/your-repo-name](https://patrick-nasar.github.io/flights/flights/)).
+The project is **deployed on GitHub Pages** and can be accessed [here](https://patrick-nasar.github.io/flights/flights/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
 
