@@ -42,7 +42,7 @@ describe('SerpapiService', () => {
           result = [flights.flights[i]]
         }
       }
-      expect(result).toEqual([{
+      expect(result).toEqual([{ 
         "id": 1,
         "airline": "American Airlines",
         "flightNumber": "AA123",
